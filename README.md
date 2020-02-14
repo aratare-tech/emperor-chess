@@ -40,15 +40,14 @@ So with that in mind, Emperor Chess comes with its own rules, and some of them o
 ### Attack Point (AP)
 - `AP` determines how strong each piece is. The higher the number, the stronger it is. It is used to weild both `assault` (taking other piece) and `active defense` (blocking other pieces from attacking).
 - A chess piece can only take the opponent's piece _if_ it has equal or greater `AP`. You cannot take the opponent's piece if your piece has less `AP`.
-- Taking a piece will cause `exhaustion`, which means it will decrease the `AP` of the victor by the amount of `AP` of the fallen piece. For example, if piece A with `AP` of 3 takes down piece B with `AP` of 1, A will be left with 2 `AP`. This lasts for _**3**_ rounds. Consecutive will reset the round counter.
+- Taking a piece will cause `exhaustion`, which means it will decrease the `AP` of the victor by the amount of `AP` of the fallen piece. For example, if piece A with `AP` of 3 takes down piece B with `AP` of 1, A will be left with 2 `AP`. This lasts for _**3**_ rounds. Consecutive attacks will reset the round counter.
 - The rule above is also applied when your piece is moved to a location within the striking distance of a opponent's piece. The opponent cannot take your piece if their piece's `AP` is lower than yours. This is called `active defense` because you don't need to run away like in King Chess.
 - Taking a piece with the same `AP` will cause `mutual destruction`, which mean _both_ pieces will be destroyed.
 - Both `assault`, `active defense` and `mutual destruction` are also applicable to checks and checkmates. I.e. you cannot take the king if you have less `AP`.
 
 ### Influence Point (IP)
 - `IP` allows specialisation of a piece. For example, a pawn can specialise in spear, sword or arrow.
-- Specialisation is changable, i.e. a pawn can specialise in sword after specialising in spear.
-- Specialisation will cost an amount of `IP` and can alter the chess piece's `AP`. More details on specialisation later.
+- Specialisation will cost an amount of `IP` and can alter the chess piece's `AP`. More details on [specialisation here](#specialisation).
 - `IP` is incremented for each piece every _**5**_ turns.
 
 ## Turn
@@ -66,10 +65,19 @@ Any periodic event such as `IP` increments will happen at the beginning of a tur
 ## Specialisation
 Specialisation enhances a piece at the cost of turns and certain amount of `IP`. Enhancement comes in many forms, some with stats improvement, some with _**special**_ abilities. Specifically:
 - **Stats improvement:** Enhancing a piece will increase its `AP` by a certain amount.
-- **Special ability:** Enhancing a piece will give it some passive ability such as adjacent piece moral boost (increase `AP`). More details [here](#special-abilities).
+- **Special ability:** Enhancing a piece will give it some passive ability such as adjacent pieces moral boost (increasing `AP`). More details [here](#special-abilities).
 
 There are also rules around specialisation:
+- Specialisation is changable, i.e. a pawn can specialise in sword after specialising in spear.
+- Specialisation is _not_ repeatable, i.e. once specialised in a certain area you cannot respecialise in that area. For example, a pawn that respecialises from sword to spear cannot go back to sword.
 - Specialising a piece will forfeit that turn, and specialisation may take a number of turns before it is completed.
+- Pieces that are in the middle of specialisation cannot move, but still can be attacked and all attack effects will still take place normally.
+
+Here's a complete list of specialisation for each piece within the game:
+
+| Piece | Specialisation |
+| ---- | ---- |
+| Pawn | 
 
 ## Supply
 
