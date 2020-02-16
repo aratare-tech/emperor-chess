@@ -1,5 +1,5 @@
 (defproject emperor-chess "0.1.0-SNAPSHOT"
-  :description "FIXME: write description"
+  :description "Like King Chess but better ;)"
   :url "http://example.com/FIXME"
   :license {:name "Eclipse Public License"
             :url  "http://www.eclipse.org/legal/epl-v10.html"}
@@ -15,9 +15,7 @@
                  [org.clojure/clojurescript "1.10.597" :scope "provided"]
                  [metosin/reitit "0.3.10"]
                  [pez/clerk "1.0.0"]
-                 [venantius/accountant "0.2.5" :exclusions [org.clojure/tools.reader]]
-                 [re-frame "0.11.0"]
-                 [metosin/spec-tools "0.10.1"]]
+                 [venantius/accountant "0.2.5" :exclusions [org.clojure/tools.reader]]]
 
   :plugins [[lein-environ "1.1.0"]
             [lein-cljsbuild "1.1.7"]

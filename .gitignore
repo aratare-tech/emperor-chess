@@ -13,3 +13,6 @@ pom.xml.asc
 *.log
 /.env
 /.sass-cache
+*.xml
+*.iml
+.idea
